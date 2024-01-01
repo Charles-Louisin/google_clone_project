@@ -1,9 +1,9 @@
 # Validation pour mon projet de clonage de Google_account
 
-# first
+# 1
    "git init"
 
-# second
+# 2
    "git branch -M main"
 
 # 3
