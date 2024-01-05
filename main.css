@@ -20,23 +20,6 @@ main.main-account{
 SECTION HEADER-BOX STYLE START
 ========================================================================================================
 */
-span.fa-ellipse{
-    border: 1px solid #000000;
-    /* width: 140px; */
-    /* height: 200px; */
-    padding: 15px 30px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-span.fa-ellipse:hover{
-    background: #f2f2f2;
-}
-span.fa-ellipse:focus{
-    background: red;
-}
-input[type="text"]{
-    border: none;
-}
 
 section.header-box{
     background: #ffffff;
@@ -53,13 +36,52 @@ div.header-container{
     height: 49px;
     margin-left: 11px;
 }
+
+/*--- //STYLING LEFT BOX START// ---*/
+
 div.left-box{
     /* background: yellow; */
     width: 159px;
-    height: inherit;
-    display: inline;
-    
+    height: 100%;
+    /* display: inline-block; */
+    /* justify-content: space-between; */
 }
+
+div.boxs{
+    /* background: red; */
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+div.boxs:focus{
+    text-decoration: underline;
+}
+img.google-logo{
+    display: inline-block;
+    margin-top: 10px;
+    width: 75px;
+    height: auto;
+    padding-top: 3px;
+}
+p.text-after-google-logo{
+    font-family: "Product Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 24px;
+    padding-top: 13px;
+    padding-left: px;
+    color: #5f6368;
+    display: inline-block;
+}
+
+/*--- //STYLING LEFT BOX END// ---*/
+
+
+
+
+ /*--- //STYLING CENTER BOX START// ---*/
+
 div.center-box{
     /* background: rgb(119, 119, 12); */
     width: 728px;
@@ -71,83 +93,115 @@ div.center-box{
 form[method="post"]{
     border-radius: 8px;
     background: #F1F3F4;
-    border: 1px solid transparent;
+    border: none;
     display: inline-block;
     width: 100%;
     height: 100%;
 }
-form:focus{
-    /* background: black; */
-    border-radius: 8px;
+form[method="post"]:focus{
     background: #ffffff;
-    border: 1px solid transparent;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
+    box-shadow: 0 0 2px 0 #000000;
 }
-input[type="search"]{
-    display: inline-block;
-    width: 91.4%;
-    height: 100%;
-    float: right;
-    /* margin-right: 54px; */
-    font-family: "Google Sans", Roboto, Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 46px;
-    font-weight: 400;
-    color: #000000;
-    background: transparent;
-    border: 1px solid transparent;
-    border: none;
-}
-input[type="search"]:focus{
-    display: inline-block;
-    width: 91.4%;
-    height: 100%;
-    float: right;
-    padding-right: 34px;
-    font-family: "Google Sans", Roboto, Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 46px;
-    font-weight: 400;
-    color: #000000;
-    background: #ffffff;
-    border: 1px solid transparent;
-    border: none;
-    outline: none;
-}
-div.icon-png{
-    text-align: center;
-    width: 62px;
-    height: 100%;
-    /* background: brown; */
-    display: inline-block;
+span.icon-png{
+    width: inherit;
+    height: inherit;
+    justify-content: space-between;
+    display: flex;
     cursor: pointer;
-
-}
-div.icon-png:focus{
-    /* background: black; */
-}
-div.center-box img.material-symbols-outlined{
-    padding-left: 22px;
-    padding-top: 12px;
-    float: left;
-    /* display: inline-block; */
     
 }
-div.right-box{
-    /* background: rgba(82, 82, 17, 0.462); */
-    width: 121px;
+span.icon-png:focus{
+    background: #ffffff;
+    box-shadow: 0 0 2px 0 #000000;
+}
+div.center-box img.material-symbols-outlined{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+input[type="search"]{
+    padding-left: 10px;
+    margin-right: 35px;
     height: 100%;
-    display: inline;
-    /* float: right; */
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-family: "Google Sans Text", "Google Sans", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+input[type="search"]:focus{
+    outline: none;
+    background: #ffffff;
+    /* box-shadow: 0 0 2px 0 #000000; */
+}
+input[type="search"]::placeholder{
+    font-family: "Google Sans Text", "Google Sans", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* color: #444746; */
 }
 div.boxing{
     display: inline-block;
     float: left;
 }
+
+/*--- //STYLING CENTER BOX END// ---*/
+
+
+
+
+/*--- //STYLING RIGHT BOX START// ---*/
+
+div.right-box{
+    /* background: rgba(82, 82, 17, 0.462); */
+    width: 131px;
+    height: 100%;
+    /* display: inline; */
+    /* float: right; */
+    margin-left: 431px;
+}
+nav.header-nav{
+    width: 100%;
+    height: 100%;
+}
+div.right-nav{
+    text-align: center;
+    width: 33.3%;
+    height: 85%;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 3px;
+    float: left;
+}
+div.right-nav:hover{
+    background: #F1F3F4
+}
+nav.header-nav span.material-symbols-outlined{
+    color: #5f6368;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+img.image-account{
+    width: 35px;
+    height: auto;
+    border-radius: 50%;
+    padding-top: 5px;
+    display: inline-block;
+}
+
+/*--- //STYLING RIGHT BOX END// ---*/
+
 
 
 /* 
@@ -163,6 +217,8 @@ SECTION ASIDE-BOX STYLE START
 ========================================================================================================
 */
 
+/* FIX HEADER LEFT ASIDE STYLE START  */
+
 section.aside-box{
     /* background: rgb(134, 123, 123); */
     width: 281px;
@@ -171,13 +227,96 @@ section.aside-box{
     position: fixed;
     /* display: inline-block; */
 }
+div.header-aside{
+    /* background: yellowgreen; */
+    height: 39.2vh;
+    width: 100%;
+    margin-top: 83px;
+    border-bottom: 1px solid #4447462f;
+    display: inline-block;
+}
+div.inside-aside{
+    /* background: brown; */
+    width: 100%;
+    height: 6.3vh;
+    /* margin-bottom: 0.5px; */
+    /* border-top-right-radius: 25%; */
+    /* border-bottom-right-radius: 25%; */
+}
+div.inside-aside:focus{
+    background: #0b57d0;
+}
+div.images{
+    /* background: purple; */
+    height: 100%;
+    width: 13%;
+    margin-left: 25px;
+    float: left;
+    display: inline-block;
+}
+
+span.material-symbols-outlined {
+  color: #000000;
+  font-size: 25px;
+  margin-top: 10px;
+}
+div.text{
+    /* background: pink; */
+    height: 100%;
+    width: 78%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    float: left;
+    display: inline-block;
+}
+div.images>img.img-icone{
+    height: auto;
+    width: 70%;
+    margin-top: 10px;
+    /* margin-left: 5px; */
+}
+div.text>h2.text-after-icone{
+    font-family: "Google Sans Text", "Google Sans", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1f1f1f;
+    margin-top: 13px;
+    padding-left: 3px;
+}
+
+/* FIX HEADER LEFT ASIDE STYLE END  */
 
 
-/* FIX LEFT ASIDE STYLE START  */
+
+/* FIX FOOTER LEFT ASIDE STYLE END  */
+
+div.footer-aside{
+    /* background: orange; */
+    width: 80%;
+    height: 15vh;
+    margin-top: 30vh;
+    margin-left: 29px;
+}
+nav.aside-footer-nav{
+    margin-bottom: 8px;
+}
+a.angle-footer{
+    text-decoration: none;
+    color: #444746;
+    font-family: "Google Sans Text", "Google Sans", Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 5px;
+    margin-right: 20px;
+    display: inline-block;
+}
 
 
-
-/* FIX LEFT ASIDE STYLE END  */
+/* FIX FOOTER LEFT ASIDE STYLE END  */
 
 
 /* 

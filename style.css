@@ -123,14 +123,15 @@ RECOVERY START
 div.parent{
     /* background: blue; */
     width: 450px;
+    /* height: 490vh; */
     margin: 0 auto;
     margin-left: 543px;
-    margin-top: 107px;
+    margin-top: 101px;
     display: inline-block;
 }
 div.firstbox{
     /* background: brown; */
-    height: 69.9vh;
+    height: 71vh;
     border-radius: 80x;
     border: 1px solid #8888884d;
     border-radius: 8px;
