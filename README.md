@@ -1,22 +1,10 @@
-# Validation pour mon projet de clonage de Google_account
+# Validation pour mon projet de clonage du site Google_account.
+  *   "git init"
+  *   "git branch -M main"
+  *   "git add README.md"
+  *   "git commit -m "your message" "
+  *   "git remote add origin (key= https or ssh)"
+  *   "git push origin main"
 
-# 1
-   "git init"
-
-# 2
-   "git branch -M main"
-
-# 3
-   "git add README.md"
-
-# 4
-   "git commit -m "your message" "
-
-# 5
-   "git remote add origin (key= https or ssh)"
-
-# 6
-   "git push origin main"
-
-# Je vais venir mon autre repo ici avec un "git clone"
-
+# Je vais venir mon autre repo ici.
+   "Avec un git clone et une copie de tous les fichiers"
