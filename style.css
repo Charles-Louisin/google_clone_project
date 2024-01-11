@@ -46,6 +46,8 @@ select.selectown:focus{
     background: #4389f96e;
     outline: none;
 }
+
+
 p.email2{
     color: #888888bb;
     /* display: inline-block; */
@@ -53,8 +55,31 @@ p.email2{
 }
 div.angletag2{
     float: right;
-    /* display: inline-block; */
+    display: inline-block;
     margin-top: 40px;
+    /* margin-right: 8.5px; */
+}
+a.nextpage,
+div.inputbar1 input[type="submit"]{
+    text-decoration: none;
+    padding: 9px 24px 9px 24px;
+    background: rgb(84, 84, 254);
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+}
+a.nextpage:hover{
+    background: #0557db;
+    box-shadow: 0 0 5px 1px #0000002a;
+}
+div.inputbar1 input[type="submit"]{
+    /* cursor: pointer; */
+    text-decoration: none;
+    padding: 10px 27px 10px 27px;
+    background: rgb(84, 84, 254);
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
 }
 
 /* 
@@ -101,6 +126,7 @@ div.angletag1{
     float: right;
     display: inline-block;
     margin-top: 40px;
+    margin-right: 8.5px;
 }
 p.email1{
     color: #888888bb;
@@ -119,6 +145,8 @@ VERIFY END
 RECOVERY START
 =====================================================================================
 */
+
+
 
 div.parent{
     /* background: blue; */
@@ -178,7 +206,8 @@ nav.button{
     margin-top: 32px;
 }
 a.next-button,
-a.skip-button{
+a.skip-button,
+div.inputbar input[type="submit"]{
     display: inline-block;
     border: 1px solid #8888884d;
     border-radius: 3px;
@@ -186,12 +215,17 @@ a.skip-button{
     text-decoration: none;
     color: #4389f9;
 }
-a.skip-button{
+a.skip-button,{
     margin-right: 1.5px;
 }
 a.next-button:hover,
-a.skip-button:hover{
+a.skip-button:hover,
+div.inputbar input[type="submit"]:hover{
     background: #fbfafacb;
+}
+div.inputbar input[type="submit"]{
+    background: #fff;
+    cursor: pointer;
 }
 
 /* 
@@ -234,16 +268,18 @@ div.angletag{
     float: right;
     display: inline-block;
     margin-top: 50px;
+    margin-right: 8.5px;
 }
 a.nextpage{
     text-decoration: none;
-    padding: 8px 25px 8px 25px;
-    background: #3980f2;
+    padding: 9px 24px 9px 24px;
+    background: rgb(84, 84, 254);
     color: #ffffff;
     border-radius: 5px;
 }
 a.nextpage:hover{
-    background: #4389f9;
+    background: #0557db;
+    box-shadow: 0 0 5px 1px #0000002a;
 }
 
 /* 
@@ -314,6 +350,7 @@ div.div1{
     font-style: normal;
     font-weight: 400;
     color: #202124;
+    
 }
 div.div1 p.paragraph1{
     margin-bottom: 15px;
@@ -359,7 +396,7 @@ select.select:focus{
 /* 
 RADIO BOX SPECIFICATION START
 */
-div.div1 p.titre1{
+div.div1 div.titre1{
     font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
     font-size: 15.5px;
     line-height: 24px;
@@ -367,6 +404,31 @@ div.div1 p.titre1{
     font-weight: 700;
     color: #202124;
     margin-bottom: 10px;
+    /* background-color: blue; */
+    width: 100%;
+    height: 30px;
+    /* display: inline-block; */
+}
+div.image{
+    /* background-color: red; */
+    width: 10%;
+    height: 100%;
+    display: inline-block;
+}
+div.image>span.material-symbols-outlined{
+    display: inline-block;
+    float: left;
+}
+div.text-title{
+    /* background-color: green; */
+    width: 90%;
+    height: 100%;
+    display: inline-block;
+}
+div.text-title strong{
+    /* padding-left: 10px; */
+    float: left;
+    display: inline-block;
 }
 p.save{
     font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
@@ -410,7 +472,7 @@ a.button-alt{
     margin-left: 217px;
     padding: 9px 23px;
     color: #ffffff;
-    background: #0000ff;
+    background: rgb(84, 84, 254);
     border-radius: 5px;
     font-size: 16px;
     font-family: arial;
@@ -419,10 +481,11 @@ a.button-alt{
     text-decoration: none;
 }
 a.button-alt:hover{
-    background: #0000ffcb;
+    background: #0557db;
+    box-shadow: 0 0 5px 1px #0000002a;
 }
 nav.button-end{
-    margin-bottom: 77.5px;
+    margin-bottom: 70px;
 }
 /*
 Main Style End
