@@ -302,7 +302,7 @@ div.footer-aside{
 nav.aside-footer-nav{
     margin-bottom: 8px;
 }
-p.angle-footer{
+a.angle-footer{
     text-decoration: none;
     color: #444746;
     font-family: "Google Sans Text", "Google Sans", Roboto, Arial, sans-serif;
